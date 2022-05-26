@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="topnav" id="myTopnav">
+        <a href="./"><img src="./images/RGb.png" alt="logo" width="30" height="20"> </a>
+        <a href="./index.html"> <i class="fa fa-home"></i> HOME </a>
+        <a href="./gallery.html"> <i class="fa fa-picture-o" aria-hidden="true"></i> GALLERY</a>
+        <a href="./about.html" class="active"> <i class="fa fa-info"></i> ABOUT US</a>
+        <a href="./contact.html"> <i class="fa fa-address-book-o" aria-hidden="true"></i> CONTACT US</a>
+        <a href="#"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> PORTAL</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars" aria-hidden="true"></i> </a>
+    </nav>
+    <!-- nav ends -->
+
+    <!-- main content -->
+    <main>
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+    </main>
+    <!-- fotter -->
+    <footer>
+        <h4>
+            © 2022 Brightway International Academy
+        </h4>
+    </footer>
+    <!-- footer -->
+    <script>
+        let acc = document.getElementsByClassName("accordion");
+        let i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+        <script src="./JS/index.js"></script>
+</body>
+
+</html>
